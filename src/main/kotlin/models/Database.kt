@@ -21,7 +21,9 @@ object DbSettings {
                 Users,
                 Films,
                 UserExpectations,
-                UserImpressions
+                UserImpressions,
+                Genres,
+                FilmGenres
             )
         }
     }
