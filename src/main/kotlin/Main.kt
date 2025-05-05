@@ -6,12 +6,13 @@ import androidx.compose.ui.window.application
 import ui.components.Navigation
 import ui.pages.HomePage
 import ui.pages.UserManagementPage
+import ui.pages.WaitingWatchScreen
 import models.DbSettings
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.Modifier
 
-enum class Page { HOME, USERS, NEWFILM, PREVIEWREV }
+enum class Page { HOME, USERS, NEWFILM, PREVIEWREV, AfteWatchREV }
 
 @OptIn(ExperimentalMaterial3Api::class)
 fun main() = application {
@@ -33,6 +34,7 @@ fun main() = application {
                             Page.USERS -> UserManagementPage()
                             Page.NEWFILM -> AddMovieScreen()
                             Page.PREVIEWREV -> ReviewRatingsScreen()
+                            Page.AfteWatchREV -> WaitingWatchScreen()
                         }
                     }
                 }

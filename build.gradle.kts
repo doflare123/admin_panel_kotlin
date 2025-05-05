@@ -10,6 +10,7 @@ repositories {
     google()
     mavenCentral()
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+    maven("https://jitpack.io")
 }
 
 dependencies {
@@ -28,6 +29,7 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.1")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
     implementation("io.github.cdimascio:dotenv-kotlin:6.4.1")
+    implementation("com.github.SmartToolFactory:Compose-Chart:1.0.3")
     implementation(compose.desktop.currentOs)
 }
 

@@ -26,6 +26,8 @@ object UserRepository {
     }
 
     fun deleteUser(id: Int) = transaction {
+        UserExpectations.deleteWhere { UserExpectations.user eq id }
+        UserImpressions.deleteWhere { UserImpressions.user eq id }
         Users.deleteWhere { Users.id eq id }
     }
 }
