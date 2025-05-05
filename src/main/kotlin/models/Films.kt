@@ -24,5 +24,6 @@ enum class FilmStatus {
     ON_REVIEW,          // Ожидает оценку ожидания
     WAITING_WATCH,      // Ожидает просмотра
     WATCHED_WAIT_RATE,  // Просмотрен, ждёт оценку
-    COMPLETED           // Оценён после просмотра
+    COMPLETED,          // Оценён после просмотра
+    Failed_Selection    // Если не прошел отбор по параметру 5.0
 }

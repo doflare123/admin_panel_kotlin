@@ -32,6 +32,9 @@ fun Navigation(currentPage: Page, onNavigate: (Page) -> Unit) {
             NavigationButton("Новый фильм", currentPage == Page.NEWFILM) {
                 onNavigate(Page.NEWFILM)
             }
+            NavigationButton("Новый фильм", currentPage == Page.PREVIEWREV) {
+                onNavigate(Page.PREVIEWREV)
+            }
         }
     }
 }

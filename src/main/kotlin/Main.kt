@@ -11,7 +11,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.Modifier
 
-enum class Page { HOME, USERS, NEWFILM }
+enum class Page { HOME, USERS, NEWFILM, PREVIEWREV }
 
 @OptIn(ExperimentalMaterial3Api::class)
 fun main() = application {
@@ -32,6 +32,7 @@ fun main() = application {
                             Page.HOME -> HomePage()
                             Page.USERS -> UserManagementPage()
                             Page.NEWFILM -> AddMovieScreen()
+                            Page.PREVIEWREV -> ReviewRatingsScreen()
                         }
                     }
                 }
